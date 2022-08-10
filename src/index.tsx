@@ -1,5 +1,5 @@
 import React from "react";
-import { useReadyStateEffect } from "react-ready-state-effect";
+import useReadyStateEffect from "./useReadyStateEffect";
 
 type Props = {
 	forceOnload?: boolean;
@@ -12,7 +12,7 @@ export default function VLibras({ forceOnload }: Props): JSX.Element {
 			script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
 			script.async = true;
 			const widgetUrl = `https://vlibras.gov.br/app`;
-			script.onload = (load: any) => {
+			script.onload = () => {
 				// @ts-ignore
 				new window.VLibras.Widget(widgetUrl);
 				if (forceOnload) {
