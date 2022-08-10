@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "declarationDir": "dist/types/",
+    "declaration": true,
+    "declarationMap": false,
+    "isolatedModules": false,
+    "noEmit": false,
+    "allowJs": false,
+    "emitDeclarationOnly": true
+  },
+  "exclude": [
+    "__tests__/*",
+    "node_modules/*",
+    "dist/*",
+    "src/setupTests.ts"
+  ]
+}

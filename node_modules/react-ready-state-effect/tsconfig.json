@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "sourceMap": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "build",
+    "strict": true
+  },
+  "exclude": [
+    "./node_modules/**/*",
+    "tests"
+  ]
+}

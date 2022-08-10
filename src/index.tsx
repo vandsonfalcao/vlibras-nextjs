@@ -1,25 +1,30 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useReadyStateEffect } from "react-ready-state-effect";
 
 type Props = {
 	forceOnload?: boolean;
 };
 
 export default function VLibras({ forceOnload }: Props): JSX.Element {
-	useEffect(() => {
-		const script = document.createElement("script");
-		script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
-		script.async = true;
-		const widgetUrl = `https://vlibras.gov.br/app`;
-		script.onload = (load: any) => {
-			// @ts-ignore
-			new window.VLibras.Widget(widgetUrl);
-			if (forceOnload) {
+	useReadyStateEffect(
+		() => {
+			const script = document.createElement("script");
+			script.src = "https://vlibras.gov.br/app/vlibras-plugin.js";
+			script.async = true;
+			const widgetUrl = `https://vlibras.gov.br/app`;
+			script.onload = (load: any) => {
 				// @ts-ignore
-				window.onload();
-			}
-		};
-		document.head.appendChild(script);
-	}, [forceOnload]);
+				new window.VLibras.Widget(widgetUrl);
+				if (forceOnload) {
+					// @ts-ignore
+					window.onload();
+				}
+			};
+			document.head.appendChild(script);
+		},
+		[forceOnload],
+		"complete"
+	);
 
 	return (
 		// @ts-ignore
