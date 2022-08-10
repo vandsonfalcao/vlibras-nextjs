@@ -1,6 +1,6 @@
 {
   "name": "vlibras-nextjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Vandson Falcão",
   "main": "index.js",
   "license": "MIT",
@@ -11,5 +11,4 @@
     "@types/react": "^18.0.17",
     "typescript": "^4.7.4"
   }
-
 }
