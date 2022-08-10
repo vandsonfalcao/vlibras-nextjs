@@ -6,6 +6,7 @@ type Props = {
 };
 
 export default function VLibras({ forceOnload }: Props): JSX.Element {
+	// Check if page is loaded
 	useReadyStateEffect(
 		() => {
 			const script = document.createElement("script");
