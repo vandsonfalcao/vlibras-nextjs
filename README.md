@@ -36,6 +36,7 @@ Aplicações Next
 
 Reprodução: <a href="https://vlibras-nextjs-example.vercel.app/" target="_blank">vlibras-nextjs-example</a>
 <a href="https://github.com/vandsonfalcao/vlibras-nextjs-example" target="_blank">repositorio github</a>
+<a href="https://github.com/vandsonfalcao/vlibras-nextjs-15-example" target="_blank">repositorio next15 github</a>
 
 ```ts
 import type { NextPage } from "next";
