@@ -15,6 +15,7 @@ Aplicações React
 >app.js
 
 Reprodução: <a href="https://vlibras-nextjs-on-react-example.vercel.app/" target="_blank">vlibras-nextjs-on-react-example</a>
+<a href="https://github.com/vandsonfalcao/vlibras-nextjs-on-react-example" target="_blank">repositorio github</a>
 
 ```js
 import VLibras from 'vlibras-nextjs';
@@ -34,6 +35,7 @@ Aplicações Next
 >index.tsx
 
 Reprodução: <a href="https://vlibras-nextjs-example.vercel.app/" target="_blank">vlibras-nextjs-example</a>
+<a href="https://github.com/vandsonfalcao/vlibras-nextjs-example" target="_blank">repositorio github</a>
 
 ```ts
 import type { NextPage } from "next";
